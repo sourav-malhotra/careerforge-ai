@@ -59,7 +59,8 @@ export async function getMe() {
         return response.data
 
     } catch (err) {
-        console.log(err)
+        console.error("getMe failed:", err)
+        throw err
     }
 
 }
